@@ -1,4 +1,4 @@
-***TSK (tisk)
+# TSK (tisk)
 
 Just starting this project. TSK will be a file based project management system that persists with the filesystem. Node JS with Electron for ui.
 
@@ -8,7 +8,7 @@ Any folder inside the workspace with a .tsk or .notsk (inactive, archived projec
 
 A .tsk file is a json file that holds all of the information regarding the project. This file will also hold any images used inside the project (embedded).
 
-*** Workspace data format *.wsk
+# Workspace data format *.wsk
 
 {
     title : "",
@@ -18,7 +18,7 @@ A .tsk file is a json file that holds all of the information regarding the proje
     ]
 }
 
-*** Task data format *.tsk (active) *.notsk (inactive)
+# Task data format *.tsk (active) *.notsk (inactive)
 
 {
     title : "Project Title",
@@ -61,6 +61,6 @@ A .tsk file is a json file that holds all of the information regarding the proje
     
 }
 
-***Events
+# Events
 
 Eventually I would like to add a standalone watcher that can watch for changes and act on changes. For example, do something when a new task is added.
