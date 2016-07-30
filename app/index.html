@@ -5,13 +5,34 @@
     <title>TSK</title>
   </head>
   <body>
-    <h1>TSK</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    Welcome. Work. In. Progress.
+    <div class="columns is-gapless is-mobile main">
+      <div class="column is-narrow left-menu">
+        <aside class="menu">
+          <p class="menu-label">
+            Projects
+          </p>
+          <ul class="menu-list">
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">Project 2</a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="column">
+        <div class="tabs is-centered">
+          <ul>
+            <li class="is-active"><a>Tasks</a></li>
+            <li><a>Wiki</a></li>
+            <li><a>Files</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 
   <script>
     // You can also require other files to run in this process
     require('./js/renderer.js')
   </script>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <style 
 </html>

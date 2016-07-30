@@ -8,59 +8,54 @@ Any folder inside the workspace with a .tsk or .notsk (inactive, archived projec
 
 A .tsk file is a json file that holds all of the information regarding the project. This file will also hold any images used inside the project (embedded).
 
-# Workspace data format *.wsk
+**Workspace data format *.wsk**
 
-{
-    title : "",
-    content : "",
-    projects : [
-        "relative/path/to/project/folder", "relative/path/to/project/folder"
-    ]
-}
-
-# Task data format *.tsk (active) *.notsk (inactive)
-
-{
-    title : "Project Title",
-    content : "markup",
-    tasklists : [
-        {
-            title : []
-            tasks : [{
-                title : "", /* active,  */
-                content : "markup",
-                status : "",
-                created : "",
-                updated : "",
-                due : "",
-            }]
-        }
-    ],
-
-    wiki : [
-        {
-            title : "",
-            content : "markup"
-        }
-    ]
-
-    images : {
-        "id" : "IMAGE_BINARY"
+    {
+        title : "",
+        content : "",
+        projects : [
+            "relative/path/to/project/folder", "relative/path/to/project/folder"
+        ]
     }
 
-    fileCache : [
-        { type : "folder", name : "Folder Name",note : "", items : [] }
-        { type : "file", name : "File Name", note : "" }
-    ]
+**Task data format *.tsk (active) *.notsk (inactive)**
 
-    activity : [
-        { "type" : "add", "title" : "Added note to Filename", "created" : "date" }
-        { "type" : "edit", "title" : "Added note to Filename", "created" : "date" }
-        { "type" : "delete", "title" : "Added note to Filename", "created" : "date" }
-    ]
-    
-}
+    {
+        title : "Project Title",
+        content : "markup",
+        tasks : [{
+                    title : "", /* active,  */
+                    content : "markup",
+                    status : "",
+                    created : "",
+                    updated : "",
+                    due : "",
+                }],
 
-# Events
+        wiki : [
+            {
+                title : "",
+                content : "markup"
+            }
+        ]
+
+        images : {
+            "id" : "IMAGE_BINARY"
+        }
+
+        fileCache : [
+            { type : "folder", name : "Folder Name",note : "", items : [] }
+            { type : "file", name : "File Name", note : "" }
+        ]
+
+        activity : [
+            { "type" : "add", "title" : "Added note to Filename", "created" : "date" }
+            { "type" : "edit", "title" : "Added note to Filename", "created" : "date" }
+            { "type" : "delete", "title" : "Added note to Filename", "created" : "date" }
+        ]
+        
+    }
+
+**Events**
 
 Eventually I would like to add a standalone watcher that can watch for changes and act on changes. For example, do something when a new task is added.
