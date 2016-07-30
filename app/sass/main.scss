@@ -1,0 +1,18 @@
+$primary: #202f48;
+
+@import "bulma";
+
+
+html, body, .columns.main, .left-menu{
+    height: 100%;
+}
+
+.left-menu{
+    background-color: #2E3C54;
+    
+    
+    aside{
+        padding: 15px;
+        width: 200px;
+    }
+}
